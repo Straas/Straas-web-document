@@ -5,5 +5,5 @@ StraaS.io aims to be the best video cloud partner that help our customer monetiz
 
 This repository includes the technical document and api document of StraaS server.
 
-* [Technical Document](https://github.com/StraaS/web-document/wiki)
-* [Api Document](https://straas.github.io/web-document/)
+* [Technical Document](https://github.com/StraaS/StraaS-web-document/wiki)
+* [Api Document](https://straas.github.io/StraaS-web-document/)
