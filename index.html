@@ -63,6 +63,7 @@
             <li><a href="#member-create-member-token">Create Member Token</a></li>
             <li><a href="#member-create-new-member">Create New Member</a></li>
             <li><a href="#member-get-member-information">Get Member Information</a></li>
+            <li><a href="#member-update-member">Update Member</a></li>
         </ul>
     </li>
     <li>
@@ -181,7 +182,7 @@ After the application is created, you will receive a <code>client id</code> and 
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3MywiZXhwIjoxNDcxMDc0Mzg2fQ.g__YwjBzO7d629J0aF9GcLdx9KATnUuypoBgz6BCZMM</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEwOSwiZXhwIjoxNDcyMzA1ODAxfQ.mVJ3Lcj-KN5MAksuWk5XUcm0IcO8C__ruSFcmhgQnWE</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -267,26 +268,26 @@ After the application is created, you will receive a <code>client id</code> and 
     <pre><code class="http"><span class="attribute">Total</span>: <span class="string">1</span>
 <span class="attribute">Per-Page</span>: <span class="string">10</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">192</span>
-<span class="attribute">ETag</span>: <span class="string">W/"f76cd94bf7a4f782470896e01c101ca3"</span>
+<span class="attribute">Content-Length</span>: <span class="string">193</span>
+<span class="attribute">ETag</span>: <span class="string">W/"8712d0b796d185a0d714909f09718021"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">8e3fe54c-5db0-48f6-9cb7-aa02ad085e15</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.020661</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">202986dc-69d2-4aa1-9dfc-21d55aa9c629</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.019695</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">73</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">41</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"ad-banner-1"</span></span>,
     "<span class="attribute">image</span>": <span class="value">{
       "<span class="attribute">url</span>": <span class="value"><span class="literal">null</span>
     }</span></span>,
-    "<span class="attribute">link</span>": <span class="value"><span class="string">"http://rempel.name/pauline"</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+    "<span class="attribute">link</span>": <span class="value"><span class="string">"http://grant.name/odea.rath"</span></span>,
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
   }</span>
 ]</code></pre>
 </section>
@@ -333,12 +334,12 @@ After the application is created, you will receive a <code>client id</code> and 
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/ad_banners/74</pre>
+  <pre>GET /api/v1/app/ad_banners/42</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3NCwiZXhwIjoxNDcxMDc0Mzg2fQ._EHpmQPRp7po6BlJQd8woCkHKpyb9qbC-jS63ZFfatw</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExMCwiZXhwIjoxNDcyMzA1ODAyfQ._erQynx1AipibQbPx9QRsI1Akuqp6k6UKGb0HpOCOgs</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -429,25 +430,25 @@ After the application is created, you will receive a <code>client id</code> and 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">200</span>
-<span class="attribute">ETag</span>: <span class="string">W/"d0d433b51014e0f2d60fa0fca3d0eb3b"</span>
+<span class="attribute">Content-Length</span>: <span class="string">206</span>
+<span class="attribute">ETag</span>: <span class="string">W/"717a7efa102db32d87508edf09242bb8"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">9e3498ef-86fc-4841-a3e1-74d317c7b072</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.009333</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">e2dbf696-25ca-41b9-b974-49cfd6210f5c</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.009585</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="number">74</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="number">42</span></span>,
   "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
   "<span class="attribute">name</span>": <span class="value"><span class="string">"ad-banner-2"</span></span>,
   "<span class="attribute">image</span>": <span class="value">{
     "<span class="attribute">url</span>": <span class="value"><span class="literal">null</span>
   }</span></span>,
-  "<span class="attribute">link</span>": <span class="value"><span class="string">"http://lynchhuel.biz/amely.hermiston"</span></span>,
-  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+  "<span class="attribute">link</span>": <span class="value"><span class="string">"http://cartwrightrau.info/abigayle_sanford"</span></span>,
+  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
 }</span></code></pre>
 </section>
 
@@ -520,8 +521,8 @@ After the application is created, you will receive a <code>client id</code> and 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">client_id</span>": <span class="value"><span class="string">"2acfed75a46cc9ea"</span></span>,
-  "<span class="attribute">client_secret</span>": <span class="value"><span class="string">"oUk7m7NFUZqpvMjD"</span>
+  "<span class="attribute">client_id</span>": <span class="value"><span class="string">"6005a86b5b462fd9"</span></span>,
+  "<span class="attribute">client_secret</span>": <span class="value"><span class="string">"PV74AbO6axfC_Mxl"</span>
 }</span></code></pre>
 </section>
 
@@ -559,17 +560,18 @@ After the application is created, you will receive a <code>client id</code> and 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">135</span>
-<span class="attribute">ETag</span>: <span class="string">W/"e96144708167724c60342299e18efac2"</span>
+<span class="attribute">Content-Length</span>: <span class="string">166</span>
+<span class="attribute">ETag</span>: <span class="string">W/"20fe730ee8858a61aaa3aff357d1df9e"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">49d69da0-e51c-4f74-8262-8ef972c6d6b4</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.008665</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">45ffd416-6254-41ca-b750-9fbd04949959</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.010703</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">token</span>": <span class="value"><span class="string">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4OCwiZXhwIjoxNDcxMDc0Mzg5fQ.HAeX8QxeT_8piNKlSr9dpCsuBTSgrE3CyvSjwU7xDXk"</span>
+  "<span class="attribute">token</span>": <span class="value"><span class="string">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyNSwiZXhwIjoxNDcyMzA1ODA1fQ.sH6EcIU8YoYK62nzyG4rEYj19ZNZAY51BPZMtetRUZY"</span></span>,
+  "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span>
 }</span></code></pre>
 </section>
 
@@ -631,7 +633,7 @@ After the application is created, you will receive a <code>client id</code> and 
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3NSwiZXhwIjoxNDcxMDc0Mzg2fQ.LKMy4Mt7GafM2w9bvP58TRvvdSpfTHLKo7pkwsVAAgc</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExMSwiZXhwIjoxNDcyMzA1ODAyfQ.cLv5us-kQuhP3_7opw2sm9ngcUsRAxccfC-3KAjLiGI</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -730,70 +732,70 @@ per_page=5</pre>
 <span class="attribute">Total</span>: <span class="string">21</span>
 <span class="attribute">Per-Page</span>: <span class="string">5</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">1145</span>
-<span class="attribute">ETag</span>: <span class="string">W/"64b828a010f482b503a60bc1c9c07cc6"</span>
+<span class="attribute">Content-Length</span>: <span class="string">1132</span>
+<span class="attribute">ETag</span>: <span class="string">W/"cda70d3a877605a08988f133304760f1"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">89a3bd01-e456-4392-8774-aa0f182c6fd3</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.010773</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">dd85caea-f61c-456d-961f-89a183efe5c4</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.012625</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">459</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">273</span></span>,
     "<span class="attribute">default</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"category-5"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Alias doloribus deleniti dignissimos est qui eligendi."</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Laudantium ex omnis ducimus sunt."</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">1</span></span>,
     "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
   }</span>,
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">460</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">274</span></span>,
     "<span class="attribute">default</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"category-6"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Porro aspernatur doloribus dicta et non."</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Sed tenetur ab necessitatibus et minus enim quasi."</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">1</span></span>,
     "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
   }</span>,
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">461</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">275</span></span>,
     "<span class="attribute">default</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"category-7"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Cum molestiae omnis error quae."</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Id voluptas aliquid aut animi alias ut est."</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">1</span></span>,
     "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
   }</span>,
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">462</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">276</span></span>,
     "<span class="attribute">default</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"category-8"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Impedit labore ex accusantium est."</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Dolorem in est dolor perferendis."</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">1</span></span>,
     "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
   }</span>,
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">463</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">277</span></span>,
     "<span class="attribute">default</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"category-9"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Quia aliquam quod aut ex sint inventore ut repudiandae."</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Qui repellendus veniam dolores alias odio."</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">1</span></span>,
     "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:26Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:02Z"</span>
   }</span>
 ]</code></pre>
 </section>
@@ -846,12 +848,12 @@ per_page=5</pre>
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/lives/npMzYFFe</pre>
+  <pre>GET /api/v1/app/lives/jzafkgzq</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3NywiZXhwIjoxNDcxMDc0Mzg3fQ.twIAZOxIzSwuxL4FgaANZjyk5r_vAfO3sYvNRuHSqlE</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExMywiZXhwIjoxNDcyMzA1ODAzfQ.6llAKfJPVf_GX1elypTWKqNHjHJYUR65W9LAuUrnfeE</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -1215,34 +1217,34 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">640</span>
-<span class="attribute">ETag</span>: <span class="string">W/"3bb443d165ac0bbe36b1135888a2b3f5"</span>
+<span class="attribute">Content-Length</span>: <span class="string">602</span>
+<span class="attribute">ETag</span>: <span class="string">W/"9130bf6755b8fe91272b37311af127c0"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">ad63164e-553d-44b5-b6a0-833dfcaf30b9</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.017194</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">011ff760-7bc4-48f4-9eff-88b2c68d479e</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.017410</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="string">"npMzYFFe"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"jzafkgzq"</span></span>,
   "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
-  "<span class="attribute">title</span>": <span class="value"><span class="string">"Repellendus repudiandae et inventore et perspiciatis laborum corrupti nostrum."</span></span>,
-  "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Beatae accusamus assumenda sit."</span></span>,
+  "<span class="attribute">title</span>": <span class="value"><span class="string">"Dolores quod aut rerum nisi et."</span></span>,
+  "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Culpa fugiat enim sunt unde tempore aut."</span></span>,
   "<span class="attribute">status</span>": <span class="value"><span class="string">"ready"</span></span>,
-  "<span class="attribute">start_time</span>": <span class="value"><span class="string">"2016-08-11T12:02:44.000Z"</span></span>,
+  "<span class="attribute">start_time</span>": <span class="value"><span class="string">"2016-08-26T23:15:24.000Z"</span></span>,
   "<span class="attribute">highest_resolution</span>": <span class="value"><span class="string">"_720p"</span></span>,
   "<span class="attribute">full_hd_enabled</span>": <span class="value"><span class="literal">true</span></span>,
-  "<span class="attribute">stream_url</span>": <span class="value"><span class="string">"https://rtcp-agent-staging.straas.net/npMzYFFe/video/playlist.m3u8"</span></span>,
+  "<span class="attribute">stream_url</span>": <span class="value"><span class="string">"https://rtcp-agent-staging.straas.net/jzafkgzq/video/playlist.m3u8"</span></span>,
   "<span class="attribute">stream_server_url</span>": <span class="value"><span class="string">"rtmp://livestaging-ea.straas.net/app"</span></span>,
-  "<span class="attribute">stream_key</span>": <span class="value"><span class="string">"794690fe41604f1ba106970c90be4cc8"</span></span>,
+  "<span class="attribute">stream_key</span>": <span class="value"><span class="string">"47a107e389034a7f8f21399fd00fd92a"</span></span>,
   "<span class="attribute">thumbnail_urls</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">poster_url</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">cover_url</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">cover_image</span>": <span class="value">{
     "<span class="attribute">url</span>": <span class="value"><span class="literal">null</span>
   }</span></span>,
-  "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/lives/npMzYFFe"</span>
+  "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/lives/jzafkgzq"</span>
 }</span></code></pre>
 </section>
 
@@ -1298,7 +1300,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3NiwiZXhwIjoxNDcxMDc0Mzg2fQ.d6-MjVLCW18Xt00vfKxTk4uJRtvcHfVunXZzgJB1z64</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExMiwiZXhwIjoxNDcyMzA1ODAyfQ.8PCf78FKDfvdZRclS5jfaYLOCCGwrF2RmSwXTkJ2qNo</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -1669,35 +1671,35 @@ per_page=5</pre>
     <pre><code class="http"><span class="attribute">Total</span>: <span class="string">1</span>
 <span class="attribute">Per-Page</span>: <span class="string">5</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">603</span>
-<span class="attribute">ETag</span>: <span class="string">W/"52adb6d312cadce60595020793397e9b"</span>
+<span class="attribute">Content-Length</span>: <span class="string">612</span>
+<span class="attribute">ETag</span>: <span class="string">W/"bf4fe6e0a3b66194aca004d1618a02f1"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">16ba29c2-58bd-49ca-858a-8d55f819a423</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.027741</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">718fd4bf-9116-4a34-8ca7-7e6810bd01d7</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.028044</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="string">"aAJZ7AyF"</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="string">"zeJLd9AL"</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
-    "<span class="attribute">title</span>": <span class="value"><span class="string">"Pariatur modi nostrum quia."</span></span>,
-    "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Iure ullam sit quaerat dolor velit quam et."</span></span>,
+    "<span class="attribute">title</span>": <span class="value"><span class="string">"Eveniet vero dolorum qui voluptas."</span></span>,
+    "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Odio neque omnis soluta voluptatem qui culpa."</span></span>,
     "<span class="attribute">status</span>": <span class="value"><span class="string">"ready"</span></span>,
-    "<span class="attribute">start_time</span>": <span class="value"><span class="string">"2016-08-12T10:11:12.000Z"</span></span>,
+    "<span class="attribute">start_time</span>": <span class="value"><span class="string">"2016-08-26T20:43:28.000Z"</span></span>,
     "<span class="attribute">highest_resolution</span>": <span class="value"><span class="string">"_720p"</span></span>,
     "<span class="attribute">full_hd_enabled</span>": <span class="value"><span class="literal">true</span></span>,
-    "<span class="attribute">stream_url</span>": <span class="value"><span class="string">"https://rtcp-agent-staging.straas.net/aAJZ7AyF/video/playlist.m3u8"</span></span>,
+    "<span class="attribute">stream_url</span>": <span class="value"><span class="string">"https://rtcp-agent-staging.straas.net/zeJLd9AL/video/playlist.m3u8"</span></span>,
     "<span class="attribute">stream_server_url</span>": <span class="value"><span class="string">"rtmp://livestaging-ea.straas.net/app"</span></span>,
-    "<span class="attribute">stream_key</span>": <span class="value"><span class="string">"a8724ee1625d47158c7742e8756c27bd"</span></span>,
+    "<span class="attribute">stream_key</span>": <span class="value"><span class="string">"92fa45e8acd84eb9893ed0dc3a4fafb7"</span></span>,
     "<span class="attribute">thumbnail_urls</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">poster_url</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">cover_url</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">cover_image</span>": <span class="value">{
       "<span class="attribute">url</span>": <span class="value"><span class="literal">null</span>
     }</span></span>,
-    "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/lives/aAJZ7AyF"</span>
+    "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/lives/zeJLd9AL"</span>
   }</span>
 ]</code></pre>
 </section>
@@ -1755,7 +1757,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4MCwiZXhwIjoxNDcxMDc0Mzg4fQ.PvFwjCO3UkcnnssUxYBwQQ6hmhW0ZCbjyP8pEUb7d9k</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExNywiZXhwIjoxNDcyMzA1ODAzfQ.moT97WWLVD4mRDtdwNexHiAbvb-g98NKy7HglxW2WLs</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -1797,17 +1799,17 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">189</span>
-<span class="attribute">ETag</span>: <span class="string">W/"672332a6d042f22d25a972104937d621"</span>
+<span class="attribute">Content-Length</span>: <span class="string">201</span>
+<span class="attribute">ETag</span>: <span class="string">W/"85f1920c05c5b93631c7ede5f92ddeeb"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">ae9bfea9-aaaf-41c8-aafa-8344edcc68aa</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.044329</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">a8fe190b-df47-4136-b596-10e324aae93e</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.028948</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">token</span>": <span class="value"><span class="string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiY3BfbWVtYmVyX2lkXzE0NzA1NjgwNjciLCJyZXhwIjoxNDc5NjI3OTg4LCJleHAiOjE0NzEwNzQzODh9.Wnl6-QG9s5QSYVrMw0YCVV4YM5xrcjGEquxtpDD9X58"</span>
+  "<span class="attribute">token</span>": <span class="value"><span class="string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYTQ1MTdhZTE0YTAzNTAwZThiYTNjMjJiZTVkYTRjOGIiLCJyZXhwIjoxNDgwODU5NDAzLCJleHAiOjE0NzIzMDU4MDN9.F8G6uQTCUl58VpchZYtUiPnk3JDJe0ht2G4TLpyOQZA"</span>
 }</span></code></pre>
 </section>
 
@@ -1850,6 +1852,24 @@ per_page=5</pre>
           </td>
           <td class="description">Your member's email</td>
         </tr>
+        <tr>
+          <td class="name">
+              name
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
+        <tr>
+          <td class="name">
+              avatar_url
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
+        <tr>
+          <td class="name">
+              personal_url
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
     </tbody></table>
   </div>
 </section>
@@ -1865,7 +1885,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3OCwiZXhwIjoxNDcxMDc0Mzg4fQ.DNEDxVIjI3FWspg_mzh8l25oV4dYMxp3FBTbc6jNxBw</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExNCwiZXhwIjoxNDcyMzA1ODAzfQ.vQy4wqwQyB6PJk8exhk5bmCn6pfGd80082A-vmFPeB8</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -1875,8 +1895,8 @@ per_page=5</pre>
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="string">"cp_member_id_1470987988"</span></span>,
-  "<span class="attribute">email</span>": <span class="value"><span class="string">"cp_member_id_1470987988@gamil.com"</span>
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"cp_member_id_1472219403"</span></span>,
+  "<span class="attribute">email</span>": <span class="value"><span class="string">"cp_member_id_1472219403@gamil.com"</span>
 }</span></code></pre>
 </section>
 
@@ -1906,7 +1926,28 @@ per_page=5</pre>
           <td class="name">
               email
           </td>
-          <td class="description">Your member' email</td>
+          <td class="description">Your member's email</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              name
+          </td>
+          <td class="description">Your member's name</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              avatar_url
+          </td>
+          <td class="description">Your member's avatar</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              personal_url
+          </td>
+          <td class="description">Your member's personal url</td>
             <td class="extra">String</td>
         </tr>
         <tr>
@@ -1928,18 +1969,21 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">101</span>
-<span class="attribute">ETag</span>: <span class="string">W/"4a29729d7f98e052d408c46ba9e4612a"</span>
+<span class="attribute">Content-Length</span>: <span class="string">151</span>
+<span class="attribute">ETag</span>: <span class="string">W/"4cbba1bf9247bc110629c135fab20be7"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">319d7a85-2d1d-4fd2-92b7-08c625c5c7fe</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.065801</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">63235218-ca82-4cb9-a831-350f438569bd</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.069368</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="string">"cp_member_id_1470987988"</span></span>,
-  "<span class="attribute">email</span>": <span class="value"><span class="string">"cp_member_id_1470987988@gamil.com"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"cp_member_id_1472219403"</span></span>,
+  "<span class="attribute">email</span>": <span class="value"><span class="string">"cp_member_id_1472219403@gamil.com"</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="literal">null</span></span>,
+  "<span class="attribute">avatar_url</span>": <span class="value"><span class="literal">null</span></span>,
+  "<span class="attribute">personal_url</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">membership_type</span>": <span class="value"><span class="string">"free"</span>
 }</span></code></pre>
 </section>
@@ -1991,7 +2035,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE3OSwiZXhwIjoxNDcxMDc0Mzg4fQ.tDSVztvIAci6jWvLtV0OAlN33MABKbL-TFIhX0G3G-U</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExNiwiZXhwIjoxNDcyMzA1ODAzfQ.M7RPqkrFQGSIbQy_NOdvUHZPHCS5G2eq7T0OjeDHEHI</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -2025,7 +2069,28 @@ per_page=5</pre>
           <td class="name">
               email
           </td>
-          <td class="description">Your member' email</td>
+          <td class="description">Your member's email</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              name
+          </td>
+          <td class="description">Your member's name</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              avatar_url
+          </td>
+          <td class="description">Your member's avatar</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              personal_url
+          </td>
+          <td class="description">Your member's personal url</td>
             <td class="extra">String</td>
         </tr>
         <tr>
@@ -2047,11 +2112,11 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">84</span>
-<span class="attribute">ETag</span>: <span class="string">W/"5a337bde20dbc50205b267f21d1987ef"</span>
+<span class="attribute">Content-Length</span>: <span class="string">148</span>
+<span class="attribute">ETag</span>: <span class="string">W/"b3538df1c2f644f0134c0c92342afd90"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">8978cb70-1827-4bb5-9e78-e0ef6afa9a8b</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.048658</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">4e199298-e0f8-4a58-82bc-5964d9e29ba9</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.032641</span></code></pre>
   </section>
 
       <section class="body">
@@ -2059,6 +2124,182 @@ per_page=5</pre>
   <pre><code class="application/json json">{
   "<span class="attribute">id</span>": <span class="value"><span class="string">"cp_member_id_1470568067"</span></span>,
   "<span class="attribute">email</span>": <span class="value"><span class="string">"mose@schmidt.biz"</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"cp_member_name_2"</span></span>,
+  "<span class="attribute">avatar_url</span>": <span class="value"><span class="literal">null</span></span>,
+  "<span class="attribute">personal_url</span>": <span class="value"><span class="literal">null</span></span>,
+  "<span class="attribute">membership_type</span>": <span class="value"><span class="string">"free"</span>
+}</span></code></pre>
+</section>
+
+    </div>
+  </div>
+
+      </article>
+      <article id="member-update-member">
+        <h2>Update Member</h2>
+
+<div class="explanation">
+  <p>Update the information of the member. You must update at least one of email, name, avatar_url or personal_url.</p>
+
+</div>
+
+<section class="endpoint">
+  <h3><span class="translation_missing" title="translation missing: zh-TW.endpoint">Endpoint</span></h3>
+  <pre>PUT /api/v1/app/members/:id</pre>
+</section>
+
+<section class="params">
+  <h3><span class="translation_missing" title="translation missing: zh-TW.parameters">Parameters</span></h3>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tbody><tr>
+          <th>Name</th>
+          <th>Description</th>
+      </tr>
+        <tr>
+          <td class="name">
+              id
+              <span class="label label-danger required"><span class="translation_missing" title="translation missing: zh-TW.required">Required</span></span>
+          </td>
+          <td class="description">Your member's id</td>
+        </tr>
+        <tr>
+          <td class="name">
+              email
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
+        <tr>
+          <td class="name">
+              name
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
+        <tr>
+          <td class="name">
+              avatar_url
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
+        <tr>
+          <td class="name">
+              personal_url
+          </td>
+          <td class="description">Your member's email</td>
+        </tr>
+    </tbody></table>
+  </div>
+</section>
+
+
+  <div id="request-0">
+    <h3><span class="translation_missing" title="translation missing: zh-TW.request">Request</span></h3>
+    <div class="request">
+      <section class="route">
+  <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
+  <pre>PUT /api/v1/app/members/cp_member_id_1472219403</pre>
+</section>
+
+        <section class="headers">
+    <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExNSwiZXhwIjoxNDcyMzA1ODAzfQ.hMIw8e_gBG5bbNHQGtP6WuR_uLJLG09Q9G2nQszwIeY</span>
+<span class="attribute">Content-Type</span>: <span class="string">application/json</span>
+<span class="attribute">Host</span>: <span class="string">example.org</span>
+<span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
+  </section>
+
+      
+      <section class="body">
+  <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
+  <pre><code class="application/json json">{
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"new_member_name"</span>
+}</span></code></pre>
+</section>
+
+      
+    </div>
+
+    <h3><span class="translation_missing" title="translation missing: zh-TW.response">Response</span></h3>
+    <div class="response">
+      
+      <section class="params">
+  <h3><span class="translation_missing" title="translation missing: zh-TW.response_fields">Response Fields</span></h3>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <tbody><tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Type</th>
+      </tr>
+        <tr>
+          <td class="name">
+              id
+          </td>
+          <td class="description">Your member's id</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              email
+          </td>
+          <td class="description">Your member's email</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              name
+          </td>
+          <td class="description">Your member's name</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              avatar_url
+          </td>
+          <td class="description">Your member's avatar</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              personal_url
+          </td>
+          <td class="description">Your member's personal url</td>
+            <td class="extra">String</td>
+        </tr>
+        <tr>
+          <td class="name">
+              membership_type
+          </td>
+          <td class="description">Indicates this member has which membership. If the member has subscribed, his has a vip membership. {vip, free}</td>
+            <td class="extra">String</td>
+        </tr>
+    </tbody></table>
+  </div>
+</section>
+
+      <section class="status">
+  <h4><span class="translation_missing" title="translation missing: zh-TW.status">Status</span></h4>
+  <pre><code class="http"><span class="attribute">200</span></code></pre>
+</section>
+
+        <section class="headers">
+    <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
+    <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
+<span class="attribute">Content-Length</span>: <span class="string">164</span>
+<span class="attribute">ETag</span>: <span class="string">W/"36c1a2aba9655b08a0d13a39b5be4c13"</span>
+<span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
+<span class="attribute">X-Request-Id</span>: <span class="string">2fbaf0fa-2f9f-4dbf-93ec-cea405b9748f</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.080763</span></code></pre>
+  </section>
+
+      <section class="body">
+  <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
+  <pre><code class="application/json json">{
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"cp_member_id_1472219403"</span></span>,
+  "<span class="attribute">email</span>": <span class="value"><span class="string">"cp_member_id_1472219403@gamil.com"</span></span>,
+  "<span class="attribute">name</span>": <span class="value"><span class="string">"new_member_name"</span></span>,
+  "<span class="attribute">avatar_url</span>": <span class="value"><span class="literal">null</span></span>,
+  "<span class="attribute">personal_url</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">membership_type</span>": <span class="value"><span class="string">"free"</span>
 }</span></code></pre>
 </section>
@@ -2144,12 +2385,12 @@ per_page=5</pre>
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/monetization_rules?video_ids=7kWN3p9W</pre>
+  <pre>GET /api/v1/app/monetization_rules?video_ids=pry2zvrQ</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4MSwiZXhwIjoxNDcxMDc0Mzg4fQ.hzVMnYvFWgboBW39NcVfRosPVFmhO5WfGUcPYPnulIg</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExOCwiZXhwIjoxNDcyMzA1ODAzfQ.Kw7eDr8h3t01KX0mXZMaOOT5YEVxb67_D5ffi91Nqlw</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -2157,7 +2398,7 @@ per_page=5</pre>
 
       <section class="query-parameters">
   <h4><span class="translation_missing" title="translation missing: zh-TW.query_parameters">Query Parameters</span></h4>
-  <pre>video_ids=7kWN3p9W</pre>
+  <pre>video_ids=pry2zvrQ</pre>
 </section>
 
       
@@ -2246,36 +2487,36 @@ per_page=5</pre>
     <pre><code class="http"><span class="attribute">Total</span>: <span class="string">2</span>
 <span class="attribute">Per-Page</span>: <span class="string">10</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">511</span>
-<span class="attribute">ETag</span>: <span class="string">W/"bbcb52effa9976751c7eeebf283a2945"</span>
+<span class="attribute">Content-Length</span>: <span class="string">479</span>
+<span class="attribute">ETag</span>: <span class="string">W/"22b3576245ce5c5d90b8b6d9bee88540"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">837d9dd5-8cb3-4e48-afe4-4b36093c7bf0</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.019688</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">24cc7561-c00e-4809-8256-1f71b846fbce</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.020636</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">82</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">53</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
     "<span class="attribute">title</span>": <span class="value"><span class="string">"monetization rule title1"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Voluptatem omnis optio dolorem a ut nemo distinctio dolorem."</span></span>,
-    "<span class="attribute">amount</span>": <span class="value"><span class="number">583</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Quia magni et dolorem nam dolores nihil."</span></span>,
+    "<span class="attribute">amount</span>": <span class="value"><span class="number">347</span></span>,
     "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
-    "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">47933</span></span>,
-    "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"7kWN3p9W"</span></span>,
+    "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">60270</span></span>,
+    "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"pry2zvrQ"</span></span>,
     "<span class="attribute">monetizable_type</span>": <span class="value"><span class="string">"video"</span>
   }</span>,
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="number">83</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">54</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
     "<span class="attribute">title</span>": <span class="value"><span class="string">"monetization rule title2"</span></span>,
-    "<span class="attribute">description</span>": <span class="value"><span class="string">"Ad modi sed eius repellat et dolore."</span></span>,
-    "<span class="attribute">amount</span>": <span class="value"><span class="number">175</span></span>,
+    "<span class="attribute">description</span>": <span class="value"><span class="string">"Voluptates est ea quasi."</span></span>,
+    "<span class="attribute">amount</span>": <span class="value"><span class="number">293</span></span>,
     "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
-    "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">53981</span></span>,
-    "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"7kWN3p9W"</span></span>,
+    "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">58245</span></span>,
+    "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"pry2zvrQ"</span></span>,
     "<span class="attribute">monetizable_type</span>": <span class="value"><span class="string">"video"</span>
   }</span>
 ]</code></pre>
@@ -2323,12 +2564,12 @@ per_page=5</pre>
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/monetization_rules/85</pre>
+  <pre>GET /api/v1/app/monetization_rules/56</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4MiwiZXhwIjoxNDcxMDc0Mzg4fQ.9hDVSH3aeOBuTR8p7SGw-hM1mpu9W8b8hHWVlp26ljY</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExOSwiZXhwIjoxNDcyMzA1ODA0fQ.JqWq2QjMVXsTI1g0rtLatI-WZRTrArggx-cWqmRc8A4</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -2419,24 +2660,24 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">238</span>
-<span class="attribute">ETag</span>: <span class="string">W/"3ea748acc492ea4912429751b72fc91f"</span>
+<span class="attribute">Content-Length</span>: <span class="string">263</span>
+<span class="attribute">ETag</span>: <span class="string">W/"1e3fb3f0491604644c5ae104be942073"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">499daa9f-deb9-4d1f-9498-85c494a5f1bd</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.008519</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">b7b1e815-be98-4e5d-a89c-f040e92e870a</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.009231</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="number">85</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="number">56</span></span>,
   "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
   "<span class="attribute">title</span>": <span class="value"><span class="string">"monetization rule title4"</span></span>,
-  "<span class="attribute">description</span>": <span class="value"><span class="string">"Pariatur et minus reprehenderit."</span></span>,
-  "<span class="attribute">amount</span>": <span class="value"><span class="number">694</span></span>,
+  "<span class="attribute">description</span>": <span class="value"><span class="string">"Sed possimus sit qui animi similique consequatur hic sint."</span></span>,
+  "<span class="attribute">amount</span>": <span class="value"><span class="number">173</span></span>,
   "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
-  "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">40946</span></span>,
-  "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"AHTJgvVk"</span></span>,
+  "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">3481</span></span>,
+  "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"qtPPK5ja"</span></span>,
   "<span class="attribute">monetizable_type</span>": <span class="value"><span class="string">"video"</span>
 }</span></code></pre>
 </section>
@@ -2536,7 +2777,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4NCwiZXhwIjoxNDcxMDc0Mzg4fQ.uK7lKnnbTi9SfPKI8sz9fpb2oRg4-8vOpoFChlRcnJI</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyMSwiZXhwIjoxNDcyMzA1ODA0fQ.HojS7WqBka3KuJn3T37CGf3pd93QyURxTnTvujnG1BU</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -2547,7 +2788,7 @@ per_page=5</pre>
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
   "<span class="attribute">member_id</span>": <span class="value"><span class="string">"cp_member_id_1470568067"</span></span>,
-  "<span class="attribute">monetization_rule_id</span>": <span class="value"><span class="number">89</span></span>,
+  "<span class="attribute">monetization_rule_id</span>": <span class="value"><span class="number">60</span></span>,
   "<span class="attribute">name</span>": <span class="value"><span class="string">"tester"</span></span>,
   "<span class="attribute">phone</span>": <span class="value"><span class="string">"0900111222"</span></span>,
   "<span class="attribute">address</span>": <span class="value"><span class="string">"Address:10F, Nr.41, DongXing Rd., Taipei 110"</span></span>,
@@ -2591,16 +2832,16 @@ per_page=5</pre>
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Content-Length</span>: <span class="string">83</span>
-<span class="attribute">ETag</span>: <span class="string">W/"c074b1d37795b5dbf72c53416704050f"</span>
+<span class="attribute">ETag</span>: <span class="string">W/"0eb1e44813abd3aae92b80cfbf63b571"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">d648edd4-a77d-4f29-8ebd-281b28f52cba</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.164067</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">7a041297-f6e7-4486-b152-7cd98aa85c61</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.182360</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">redirect_url</span>": <span class="value"><span class="string">"https://yap-staging.straas.net/payment/pay2go/orders/qLJaURWLTAM"</span>
+  "<span class="attribute">redirect_url</span>": <span class="value"><span class="string">"https://yap-staging.straas.net/payment/pay2go/orders/LlXu7Tpakbk"</span>
 }</span></code></pre>
 </section>
 
@@ -2652,12 +2893,12 @@ per_page=5</pre>
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/orders/16H129ORW27989?includes=purchaser%2Citem%2Cinvoice%2Ctransaction</pre>
+  <pre>GET /api/v1/app/orders/16H26I2UB49804?includes=purchaser%2Citem%2Cinvoice%2Ctransaction</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4NSwiZXhwIjoxNDcxMDc0Mzg5fQ.R9ul88Yyrup8dyUgV9hFfxM-8MEBS23lXBLrpcEmOHg</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyMiwiZXhwIjoxNDcyMzA1ODA0fQ.xhjPMHyt8tiE7GS28th1SwbvmIRA8BHQlyBCcQ5zjSE</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -2864,43 +3105,43 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">583</span>
-<span class="attribute">ETag</span>: <span class="string">W/"fd32d498bd220373139ed789b54b329c"</span>
+<span class="attribute">Content-Length</span>: <span class="string">565</span>
+<span class="attribute">ETag</span>: <span class="string">W/"61c125537d60c01488bc6e67970190f0"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">4b314f2b-739f-4bdf-bfa4-515e096c3706</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.105989</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">fd68cb85-ad87-49d2-b575-6e2a1ea76d1d</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.119664</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="string">"16H129ORW27989"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"16H26I2UB49804"</span></span>,
   "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
-  "<span class="attribute">amount</span>": <span class="value"><span class="number">134</span></span>,
+  "<span class="attribute">amount</span>": <span class="value"><span class="number">389</span></span>,
   "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
   "<span class="attribute">status</span>": <span class="value"><span class="string">"paid"</span></span>,
   "<span class="attribute">error</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">item</span>": <span class="value">{
-    "<span class="attribute">id</span>": <span class="value"><span class="number">30</span></span>,
-    "<span class="attribute">monetization_rule_id</span>": <span class="value"><span class="number">90</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">25</span></span>,
+    "<span class="attribute">monetization_rule_id</span>": <span class="value"><span class="number">61</span></span>,
     "<span class="attribute">title</span>": <span class="value"><span class="string">"monetization rule title9"</span></span>,
-    "<span class="attribute">amount</span>": <span class="value"><span class="number">134</span></span>,
+    "<span class="attribute">amount</span>": <span class="value"><span class="number">389</span></span>,
     "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
-    "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">97610</span></span>,
+    "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">83278</span></span>,
     "<span class="attribute">monetizable_type</span>": <span class="value"><span class="string">"Video"</span></span>,
-    "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"M4Shb5Dv"</span>
+    "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"mpTKZxFf"</span>
   }</span></span>,
   "<span class="attribute">purchaser</span>": <span class="value">{
     "<span class="attribute">name</span>": <span class="value"><span class="string">"purchaser_name_2"</span></span>,
     "<span class="attribute">phone</span>": <span class="value"><span class="string">"0911000333"</span></span>,
-    "<span class="attribute">email</span>": <span class="value"><span class="string">"bette.connelly@dareosinski.info"</span>
+    "<span class="attribute">email</span>": <span class="value"><span class="string">"leon@beer.co"</span>
   }</span></span>,
   "<span class="attribute">invoice</span>": <span class="value">{
-    "<span class="attribute">address</span>": <span class="value"><span class="string">"鄧弄 883 號"</span>
+    "<span class="attribute">address</span>": <span class="value"><span class="string">"宰大道 1 號"</span>
   }</span></span>,
   "<span class="attribute">transaction</span>": <span class="value"><span class="literal">null</span></span>,
-  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
+  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span></span>,
+  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span></span>,
   "<span class="attribute">member_id</span>": <span class="value"><span class="string">"cp_member_id_1470568067"</span>
 }</span></code></pre>
 </section>
@@ -2970,7 +3211,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4MywiZXhwIjoxNDcxMDc0Mzg4fQ.YfEcNSrPJmRLMvKo5o71Qo-so20vmLo39rFo99GtsJ4</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyMCwiZXhwIjoxNDcyMzA1ODA0fQ._63y8bhPqimVPyBV-amRtAudzSk2C5gFWGKX1MCAbnQ</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -3180,43 +3421,43 @@ includes=purchaser,item,invoice</pre>
     <pre><code class="http"><span class="attribute">Total</span>: <span class="string">1</span>
 <span class="attribute">Per-Page</span>: <span class="string">10</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">553</span>
-<span class="attribute">ETag</span>: <span class="string">W/"5eec0f00469234e4b15b9bb8eb821deb"</span>
+<span class="attribute">Content-Length</span>: <span class="string">554</span>
+<span class="attribute">ETag</span>: <span class="string">W/"26355a6ccc5751abcd6f5e3720c0a6c3"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">0cc111e8-dd5e-41a7-a4a5-02e14fc86436</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.072677</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">5a52b8f9-4459-4f9a-ab6c-246b49abad5d</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.081509</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="string">"16H12MRQ727988"</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="string">"16H26FL2249804"</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
-    "<span class="attribute">amount</span>": <span class="value"><span class="number">377</span></span>,
+    "<span class="attribute">amount</span>": <span class="value"><span class="number">437</span></span>,
     "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
     "<span class="attribute">status</span>": <span class="value"><span class="string">"paid"</span></span>,
     "<span class="attribute">error</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">item</span>": <span class="value">{
-      "<span class="attribute">id</span>": <span class="value"><span class="number">28</span></span>,
-      "<span class="attribute">monetization_rule_id</span>": <span class="value"><span class="number">88</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="number">23</span></span>,
+      "<span class="attribute">monetization_rule_id</span>": <span class="value"><span class="number">59</span></span>,
       "<span class="attribute">title</span>": <span class="value"><span class="string">"monetization rule title7"</span></span>,
-      "<span class="attribute">amount</span>": <span class="value"><span class="number">377</span></span>,
+      "<span class="attribute">amount</span>": <span class="value"><span class="number">437</span></span>,
       "<span class="attribute">amount_currency</span>": <span class="value"><span class="string">"TWD"</span></span>,
-      "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">75567</span></span>,
+      "<span class="attribute">valid_minutes</span>": <span class="value"><span class="number">41376</span></span>,
       "<span class="attribute">monetizable_type</span>": <span class="value"><span class="string">"Video"</span></span>,
-      "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"xTqc3XDR"</span>
+      "<span class="attribute">monetizable_id</span>": <span class="value"><span class="string">"TT7taQE3"</span>
     }</span></span>,
     "<span class="attribute">purchaser</span>": <span class="value">{
       "<span class="attribute">name</span>": <span class="value"><span class="string">"purchaser_name_1"</span></span>,
       "<span class="attribute">phone</span>": <span class="value"><span class="string">"0911000333"</span></span>,
-      "<span class="attribute">email</span>": <span class="value"><span class="string">"merlin@rodriguez.biz"</span>
+      "<span class="attribute">email</span>": <span class="value"><span class="string">"ania@schowalter.info"</span>
     }</span></span>,
     "<span class="attribute">invoice</span>": <span class="value">{
-      "<span class="attribute">address</span>": <span class="value"><span class="string">"幹巷 6 號"</span>
+      "<span class="attribute">address</span>": <span class="value"><span class="string">"莘巷 41 號"</span>
     }</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:28Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:28Z"</span></span>,
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span></span>,
     "<span class="attribute">member_id</span>": <span class="value"><span class="string">"cp_member_id_1470568067"</span>
   }</span>
 ]</code></pre>
@@ -3276,12 +3517,12 @@ includes=purchaser,item,invoice</pre>
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/playlists/fKMiHbvT?page=1&amp;per_page=5</pre>
+  <pre>GET /api/v1/app/playlists/xwuAzDpP?page=1&amp;per_page=5</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4NywiZXhwIjoxNDcxMDc0Mzg5fQ.dV-6QXLJqDkHEtSmXkfST45KZMUhJGtzUg5JKdRciPs</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyNCwiZXhwIjoxNDcyMzA1ODA0fQ.IljK_cxl4z-u8onA4uYz4MMBcXBT-32ZU5zRmeAcZQA</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -3426,29 +3667,29 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">410</span>
-<span class="attribute">ETag</span>: <span class="string">W/"40c524e180bc1204e53814779f23398b"</span>
+<span class="attribute">Content-Length</span>: <span class="string">373</span>
+<span class="attribute">ETag</span>: <span class="string">W/"bf1f3e2b918026d2dc70c6a7880d8c9c"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">c79ca18d-780a-409d-8a9a-d1ba9c930c71</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.018576</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">c1c8bd6e-a501-426f-90d8-2b83bf4ddcf3</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.019038</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="string">"fKMiHbvT"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"xwuAzDpP"</span></span>,
   "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
   "<span class="attribute">title</span>": <span class="value"><span class="string">"video title4"</span></span>,
-  "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Quis blanditiis ad cupiditate unde vero dolores exercitationem suscipit."</span></span>,
+  "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Et omnis unde velit reprehenderit."</span></span>,
   "<span class="attribute">videos_count</span>": <span class="value"><span class="number">0</span></span>,
   "<span class="attribute">thumbnail_urls</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">poster_url</span>": <span class="value"><span class="literal">null</span></span>,
-  "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/playlists/fKMiHbvT"</span></span>,
-  "<span class="attribute">available</span>": <span class="value"><span class="literal">true</span></span>,
+  "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/playlists/xwuAzDpP"</span></span>,
+  "<span class="attribute">available</span>": <span class="value"><span class="literal">false</span></span>,
   "<span class="attribute">listed</span>": <span class="value"><span class="literal">false</span></span>,
   "<span class="attribute">free</span>": <span class="value"><span class="literal">true</span></span>,
-  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span>
+  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span></span>,
+  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span>
 }</span></code></pre>
 </section>
 
@@ -3528,7 +3769,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4NiwiZXhwIjoxNDcxMDc0Mzg5fQ.ihTy1JkDp06nEUxHKGG-n6dtYUPXLPjCjEZcB0C4IPY</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyMywiZXhwIjoxNDcyMzA1ODA0fQ.EZub6sueClHn8bjtQbZ3c63ZN1GCN02MQlnhK1jWbRM</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -3675,30 +3916,30 @@ per_page=5</pre>
     <pre><code class="http"><span class="attribute">Total</span>: <span class="string">1</span>
 <span class="attribute">Per-Page</span>: <span class="string">5</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">395</span>
-<span class="attribute">ETag</span>: <span class="string">W/"ee9b60fe2389e3e286fc2377202b6714"</span>
+<span class="attribute">Content-Length</span>: <span class="string">377</span>
+<span class="attribute">ETag</span>: <span class="string">W/"6e8ba93de4ca998f920a021d37b080a5"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">25a02295-9d46-48df-9f95-a97d56610416</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.043046</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">ca6d12b1-84a9-485b-af47-82337c63d829</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.043019</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="string">"JHLQX4TC"</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="string">"d6bdtmLi"</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
     "<span class="attribute">title</span>": <span class="value"><span class="string">"video title3"</span></span>,
-    "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Occaecati quos suscipit exercitationem vel consequatur."</span></span>,
+    "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Rerum sit vitae et voluptate est ea."</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">thumbnail_urls</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">poster_url</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/playlists/JHLQX4TC"</span></span>,
-    "<span class="attribute">available</span>": <span class="value"><span class="literal">true</span></span>,
+    "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/playlists/d6bdtmLi"</span></span>,
+    "<span class="attribute">available</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">listed</span>": <span class="value"><span class="literal">false</span></span>,
     "<span class="attribute">free</span>": <span class="value"><span class="literal">true</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:04Z"</span>
   }</span>
 ]</code></pre>
 </section>
@@ -3757,12 +3998,12 @@ per_page=5</pre>
     <div class="request">
       <section class="route">
   <h4><span class="translation_missing" title="translation missing: zh-TW.route">Route</span></h4>
-  <pre>GET /api/v1/app/videos/VSJAc38T?includes=monetization_rules%2Ccategory</pre>
+  <pre>GET /api/v1/app/videos/mGxnXcWD?includes=monetization_rules%2Ccategory</pre>
 </section>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE5MCwiZXhwIjoxNDcxMDc0Mzg5fQ.aR6WxSdH-oZHjlst_rRrbzqrzKKGjsu3nBOdPXi3OsI</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyNywiZXhwIjoxNDcyMzA1ODA1fQ.aYsckuFO7UckpqSZhfG81j7jdRlfJpoKVHVC5KmEbAA</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -4046,40 +4287,41 @@ per_page=5</pre>
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
     <pre><code class="http"><span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">772</span>
-<span class="attribute">ETag</span>: <span class="string">W/"d39be9394e7019b7f9e47a32b9b11e74"</span>
+<span class="attribute">Content-Length</span>: <span class="string">802</span>
+<span class="attribute">ETag</span>: <span class="string">W/"bd69eb6fd1c7968bcfe0f808afb44857"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">6522d9d9-044c-4024-84b3-a7003d361fc5</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.013880</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">7015b0cc-22b8-4b64-b8b4-da2d5df0f2aa</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.015090</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">{
-  "<span class="attribute">id</span>": <span class="value"><span class="string">"VSJAc38T"</span></span>,
+  "<span class="attribute">id</span>": <span class="value"><span class="string">"mGxnXcWD"</span></span>,
   "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
-  "<span class="attribute">title</span>": <span class="value"><span class="string">"Voluptas qui tempora veritatis."</span></span>,
-  "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Amet odit delectus vero suscipit sit quo."</span></span>,
+  "<span class="attribute">title</span>": <span class="value"><span class="string">"Dolore non libero quam ullam earum accusantium vel."</span></span>,
+  "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Et sapiente temporibus numquam."</span></span>,
   "<span class="attribute">accomplished</span>": <span class="value"><span class="literal">true</span></span>,
-  "<span class="attribute">duration</span>": <span class="value"><span class="number">1258777</span></span>,
+  "<span class="attribute">duration</span>": <span class="value"><span class="number">3153971</span></span>,
   "<span class="attribute">resolution</span>": <span class="value"><span class="string">"_1080p"</span></span>,
   "<span class="attribute">stream_url</span>": <span class="value"><span class="string">"http://example.com/test.m3u8"</span></span>,
   "<span class="attribute">poster_url</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">thumbnail_urls</span>": <span class="value"><span class="literal">null</span></span>,
-  "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/videos/VSJAc38T"</span></span>,
+  "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/videos/mGxnXcWD"</span></span>,
   "<span class="attribute">live_id</span>": <span class="value"><span class="literal">null</span></span>,
+  "<span class="attribute">projection</span>": <span class="value"><span class="string">"flat"</span></span>,
   "<span class="attribute">available</span>": <span class="value"><span class="literal">true</span></span>,
   "<span class="attribute">listed</span>": <span class="value"><span class="literal">true</span></span>,
   "<span class="attribute">category</span>": <span class="value">{
-    "<span class="attribute">id</span>": <span class="value"><span class="number">489</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="number">304</span></span>,
     "<span class="attribute">default</span>": <span class="value"><span class="literal">true</span></span>,
     "<span class="attribute">name</span>": <span class="value"><span class="string">"未分類"</span></span>,
     "<span class="attribute">description</span>": <span class="value"><span class="string">"預設分類"</span></span>,
     "<span class="attribute">videos_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
     "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span>
   }</span></span>,
   "<span class="attribute">monetization_rules</span>": <span class="value">[
 
@@ -4087,8 +4329,8 @@ per_page=5</pre>
   "<span class="attribute">free</span>": <span class="value"><span class="literal">true</span></span>,
   "<span class="attribute">live_started_at</span>": <span class="value"><span class="literal">null</span></span>,
   "<span class="attribute">live_ended_at</span>": <span class="value"><span class="literal">null</span></span>,
-  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span>
+  "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span></span>,
+  "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span>
 }</span></code></pre>
 </section>
 
@@ -4186,7 +4428,7 @@ per_page=5</pre>
 
         <section class="headers">
     <h4><span class="translation_missing" title="translation missing: zh-TW.headers">Headers</span></h4>
-    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjE4OSwiZXhwIjoxNDcxMDc0Mzg5fQ.zHt0knvP5-_NkrmhZi6Z9C8Biba6i-adM1D9BVF2mHI</span>
+    <pre><code class="http"><span class="attribute">Authorization</span>: <span class="string">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjEyNiwiZXhwIjoxNDcyMzA1ODA1fQ.PcVNkznEHQc1-IHStOdw6oxQcyOeY-7fGCmiXldAOr8</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
 <span class="attribute">Host</span>: <span class="string">example.org</span>
 <span class="attribute">Cookie</span>: <span class="string"></span></code></pre>
@@ -4474,41 +4716,42 @@ includes=monetization_rules,category</pre>
     <pre><code class="http"><span class="attribute">Total</span>: <span class="string">1</span>
 <span class="attribute">Per-Page</span>: <span class="string">5</span>
 <span class="attribute">Content-Type</span>: <span class="string">application/json</span>
-<span class="attribute">Content-Length</span>: <span class="string">804</span>
-<span class="attribute">ETag</span>: <span class="string">W/"999ab5f54bb00d7c70c1b4a553afb610"</span>
+<span class="attribute">Content-Length</span>: <span class="string">811</span>
+<span class="attribute">ETag</span>: <span class="string">W/"00a4a49dc79edefaed749beaf5a31906"</span>
 <span class="attribute">Cache-Control</span>: <span class="string">max-age=0, private, must-revalidate</span>
-<span class="attribute">X-Request-Id</span>: <span class="string">3f9e0ff9-fa75-494c-ad37-aaa83964607c</span>
-<span class="attribute">X-Runtime</span>: <span class="string">0.026865</span></code></pre>
+<span class="attribute">X-Request-Id</span>: <span class="string">9d95bbce-92dc-4f02-8ef0-d6dbdc233ce2</span>
+<span class="attribute">X-Runtime</span>: <span class="string">0.027382</span></code></pre>
   </section>
 
       <section class="body">
   <h4><span class="translation_missing" title="translation missing: zh-TW.body">Body</span></h4>
   <pre><code class="application/json json">[
   {
-    "<span class="attribute">id</span>": <span class="value"><span class="string">"tZGhKavj"</span></span>,
+    "<span class="attribute">id</span>": <span class="value"><span class="string">"QCsZFxx8"</span></span>,
     "<span class="attribute">account_id</span>": <span class="value"><span class="string">"straas-dev-test"</span></span>,
-    "<span class="attribute">title</span>": <span class="value"><span class="string">"Ratione laboriosam reiciendis qui nihil et eligendi dolore."</span></span>,
-    "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Doloribus voluptatibus qui sint doloremque."</span></span>,
+    "<span class="attribute">title</span>": <span class="value"><span class="string">"Error blanditiis quia et porro nihil."</span></span>,
+    "<span class="attribute">synopsis</span>": <span class="value"><span class="string">"Qui tenetur qui sint repellendus doloribus repellat."</span></span>,
     "<span class="attribute">accomplished</span>": <span class="value"><span class="literal">true</span></span>,
-    "<span class="attribute">duration</span>": <span class="value"><span class="number">1107240</span></span>,
+    "<span class="attribute">duration</span>": <span class="value"><span class="number">9753188</span></span>,
     "<span class="attribute">resolution</span>": <span class="value"><span class="string">"_1080p"</span></span>,
     "<span class="attribute">stream_url</span>": <span class="value"><span class="string">"http://example.com/test.m3u8"</span></span>,
     "<span class="attribute">poster_url</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">thumbnail_urls</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/videos/tZGhKavj"</span></span>,
+    "<span class="attribute">embed_url</span>": <span class="value"><span class="string">"https://app-staging.straas.net/straas-dev-test/videos/QCsZFxx8"</span></span>,
     "<span class="attribute">live_id</span>": <span class="value"><span class="literal">null</span></span>,
+    "<span class="attribute">projection</span>": <span class="value"><span class="string">"flat"</span></span>,
     "<span class="attribute">available</span>": <span class="value"><span class="literal">true</span></span>,
     "<span class="attribute">listed</span>": <span class="value"><span class="literal">true</span></span>,
     "<span class="attribute">category</span>": <span class="value">{
-      "<span class="attribute">id</span>": <span class="value"><span class="number">488</span></span>,
+      "<span class="attribute">id</span>": <span class="value"><span class="number">303</span></span>,
       "<span class="attribute">default</span>": <span class="value"><span class="literal">true</span></span>,
       "<span class="attribute">name</span>": <span class="value"><span class="string">"未分類"</span></span>,
       "<span class="attribute">description</span>": <span class="value"><span class="string">"預設分類"</span></span>,
       "<span class="attribute">videos_count</span>": <span class="value"><span class="number">0</span></span>,
       "<span class="attribute">lives_count</span>": <span class="value"><span class="number">0</span></span>,
       "<span class="attribute">parent_id</span>": <span class="value"><span class="literal">null</span></span>,
-      "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-      "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span>
+      "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span></span>,
+      "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span>
     }</span></span>,
     "<span class="attribute">monetization_rules</span>": <span class="value">[
 
@@ -4516,8 +4759,8 @@ includes=monetization_rules,category</pre>
     "<span class="attribute">free</span>": <span class="value"><span class="literal">true</span></span>,
     "<span class="attribute">live_started_at</span>": <span class="value"><span class="literal">null</span></span>,
     "<span class="attribute">live_ended_at</span>": <span class="value"><span class="literal">null</span></span>,
-    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span></span>,
-    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-12T07:46:29Z"</span>
+    "<span class="attribute">created_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span></span>,
+    "<span class="attribute">updated_at</span>": <span class="value"><span class="string">"2016-08-26T13:50:05Z"</span>
   }</span>
 ]</code></pre>
 </section>
