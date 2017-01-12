@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: message-sdk.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: message-sdk.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import _ from 'lodash'
+import MessagingClient from '../libs/messaging-client'
+
+/**
+ * MessageManager is a browser-side SDK, please use global function createMessageManager to get instance
+ */
+class MessageManager extends MessagingClient {
+  /**
+   * Please use global function createMessageManager to instead of new a MessageManager instance
+   * @constructor
+   */
+  constructor(sdkConfig) {
+    super(sdkConfig.accountId, sdkConfig.memberToken)
+  }
+
+  /**
+   * To call Init function is required after getting MessageManager instance from function createMessageManager
+   * @return {Promise} a promise
+   */
+  init() {
+    return super.init()
+  }
+
+  /**
+   * Connect to a specific chat room, by chatroomName, which is defined by developers
+   * @param  {string} chatroomName chat room name
+   * @param  {object} options
+   * @param  {object} options.events
+   * @param  {function} options.events.messages triggers when new messages are arrived
+   * @param  {function} options.events.user_add triggers when new user is arrived
+   * @param  {function} options.events.user_remove triggers when user left the room
+   * @param  {function} options.events.message_flush triggers when admin clean up all the messages
+   * @param  {function} options.events.message_remove triggers when single message is removed
+   * @param  {function} options.events.user_count triggers when server automatically broadcasting
+   *                    user count
+   * @param  {function} options.events.chat_write_mode triggers when chat_write_mode is changed
+   * @param  {function} options.events.message_input_interval triggers when message_input_interval
+   *                    is changed, usually happen when message number is too large
+   * @param  {function} options.events.aggregated_data_add triggers when new aggregated messages are arrived
+   * @param  {function} options.events.raw_data_add triggers when new raw messages are arrived
+   * @param  {function} options.events.connection_status triggers chat room status is changed
+   * @return  {Promise} a promise
+   */
+  connect(chatroomName, options) {
+    return super.connect(chatroomName, options)
+  }
+
+  /**
+   * Disconnect from a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @return  {Promise} a promise
+   */
+  disconnect(chatroomName) {
+    return super.disconnect(chatroomName)
+  }
+
+  /**
+   * Send message to a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @param  {string} message a simple string, e.g. "abc"
+   * @return  {Promise} a promise
+   */
+  sendMessage(chatroomName, message) {
+    return super.sendMessage(chatroomName, message)
+  }
+
+  /**
+   * Send a string to a specific chat room which is aggregated in aggregated_data_add
+   * @param  {string} chatroomName chat room name
+   * @param  {string} message a simple string, e.g. "like", "cry", should within 50 characters
+   * @return  {Promise} a promise
+   */
+  sendAggregatedDataTypeMessage(chatroomName, message) {
+    return super.sendAggregatedDataTypeMessage(chatroomName, message)
+  }
+
+  /**
+   * Send the raw data to a specific chat room, this type of message is not aggregated
+   * @param  {string} chatroomName chat room name
+   * @param  {string} message a json type of message, e.g. "{ id: 1 }"
+   * @return  {Promise} a promise
+   */
+  sendRawData(chatroomName, message) {
+    return super.sendRawData(chatroomName, message)
+  }
+
+  /**
+   * Update the current user's nickname
+   * @param  {string} chatroomName chat room name
+   * @param  {string} nickname a nickname to update
+   * @return  {Promise} a promise
+   */
+  updateNickName(chatroomName, nickname) {
+    return super.updateNickName(chatroomName, nickname)
+  }
+
+  /**
+   * Update the role by user id for a specific user
+   * @param  {string} chatroomName chat room name
+   * @param  {string} userId the user id of a specific user
+   * @param  {string} role MODERATOR|NORMAL
+   * @return  {Promise} a promise
+   */
+  updateUserRoleByUserId(chatroomName, userId, role) {
+    return super.updateUserRoleByUserId(chatroomName, userId, role)
+  }
+
+  /**
+   * Update the role by label for a specific user
+   * @param  {string} chatroomName chat room name
+   * @param  {string} label the label of a specific user
+   * @param  {string} role MODERATOR|NORMAL
+   * @return  {Promise} a promise
+   */
+  updateUserRoleByLabel(chatroomName, label, role) {
+    return super.updateUserRoleByLabel(chatroomName, label, role)
+  }
+
+  /**
+   * Update the role by member id for a specific user
+   * @param  {string} chatroomName chat room name
+   * @param  {string} memberId the member id of a specific user
+   * @param  {string} role MODERATOR|NORMAL
+   * @return  {Promise} a promise
+   */
+  updateUserRoleByMemberId(chatroomName, memberId, role) {
+    return super.updateUserRoleByMemberId(chatroomName, memberId, role)
+  }
+
+  /**
+   * Show all the connected chat room
+   * @return {array} names of all connected chat rooms
+   */
+  getConnectedRooms() {
+    return super.getConnectedRooms()
+  }
+
+  /**
+   * Show related meta for a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @return {object} meta object of chat room
+   */
+  getChatroomMeta(chatroomName) {
+    return super.getChatroomMeta(chatroomName)
+  }
+
+  /**
+   * Return all a specific type of users in a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @param  {string} userType onlineUser|blocked|moderator
+   * @return {object} users - array of users
+   */
+  getUsers(chatroomName, userType) {
+    return super.getUsers(chatroomName, userType)
+  }
+
+  /**
+   * Return all messages in a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @param  {object} options
+   * @param  {number} options.page undefined or null imply no shift, default is 1
+   * @param  {number} options.perPage default is 10 and MAX is 100
+   * @param  {number} options.oldestDate unix time in millisecond, ex: 1406183498018, undefined or null imply no constraint
+   * @param  {number} options.latestDate unix time in millisecond, ex: 1406183498018, undefined or null imply no constraint
+   * @return {object} messages - array of messages
+   */
+  getMessages(chatroomName, options) {
+    return super.getMessages(chatroomName, options)
+  }
+
+  /**
+   * Remove a message by message id from a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @param  {string} messageId message id to remove
+   * @return  {Promise} a promise
+   */
+  removeMessage(chatroomName, messageId) {
+    return super.removeMessage(chatroomName, messageId)
+  }
+
+  /**
+   * Flush all messages from a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @return  {Promise} a promise
+   */
+  flushMessage(chatroomName) {
+    return super.flushMessage(chatroomName)
+  }
+
+  /**
+   * Change a chat write mode from a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @param  {string} mode ALL|LOGIN|ANCHOR
+   * @return  {Promise} a promise
+   */
+  changeChatWriteMode(chatroomName, mode) {
+    return super.changeChatWriteMode(chatroomName, mode)
+  }
+
+  /**
+   * Return the current user related meta in a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @return {object} user meta object
+   */
+  getCurrentUserInChatroom(chatroomName) {
+    return super.getCurrentUserInChatroom(chatroomName)
+  }
+
+  /**
+   * Block the user/users from a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @param  {string|array} userLabels a single label or an array of labels
+   * @return  {Promise} a promise
+   */
+  blockUser(chatroomName, userLabels) {
+    return super.blockUser(chatroomName, userLabels)
+  }
+
+  /**
+   * Get status from a specific chat room
+   * @param  {string} chatroomName chat room name
+   * @return  {string} DISCONNECTING|CONNECTING|CONNECTED|IDLE|NOT_USE
+   */
+  getRoomStatus(chatroomName) {
+    return super.getRoomStatus(chatroomName)
+  }
+}
+
+/**
+ * Create message manager sdk
+ * Synchronously initiate a messaging manager with a cms account id and an user access token.
+ * Note you should use promise style to handle the callback
+ * @param {object} sdkConfig
+ * @param {string} sdkConfig.accountId required, a cms account id
+ * @param {string} sdkConfig.memberJWT optional, a jwt token to identify an user
+ * @return {object} a MessageManager instance
+ */
+export function createMessageManager(sdkConfig) {
+  _.forEach(['accountId'], (v) => {
+    if (_.isUndefined(sdkConfig[v])) {
+      throw new Error(`config ${v} is required`)
+    }
+  })
+  return new MessageManager(sdkConfig)
+}
+
+window.StraaS = { createMessageManager }
+
+if (_.isFunction(window.onStraaSMessageManagerSdkReady)) {
+  window.onStraaSMessageManagerSdkReady(createMessageManager)
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="MessageManager.html">MessageManager</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createMessageManager">createMessageManager</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Jan 12 2017 14:26:57 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
