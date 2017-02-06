@@ -27,10 +27,12 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>import _ from 'lodash'
+import gaManager from '../libs/ga-manager'
 import MessagingClient from '../libs/messaging-client'
 
 /**
- * MessageManager is a browser-side SDK, please use global function createMessageManager to get instance
+ * MessageManager is a browser-side SDK, please
+ * use global function createMessageManager to get instance
  */
 class MessageManager extends MessagingClient {
   /**
@@ -39,10 +41,12 @@ class MessageManager extends MessagingClient {
    */
   constructor(sdkConfig) {
     super(sdkConfig.accountId, sdkConfig.memberToken)
+    gaManager.init(sdkConfig.accountId)
   }
 
   /**
-   * To call Init function is required after getting MessageManager instance from function createMessageManager
+   * To call Init function is required, after getting MessageManager instance
+   * from function createMessageManager
    * @return {Promise} a promise
    */
   init() {
@@ -54,19 +58,27 @@ class MessageManager extends MessagingClient {
    * @param  {string} chatroomName chat room name
    * @param  {object} options
    * @param  {object} options.events
-   * @param  {function} options.events.messages triggers when new messages are arrived
-   * @param  {function} options.events.user_add triggers when new user is arrived
-   * @param  {function} options.events.user_remove triggers when user left the room
+   * @param  {function} options.events.user_meta:(self) triggers when user meta are arrived
+   * @param  {function} options.events.user_update:(users) triggers when users are updated
+   * @param  {function} options.events.user_add:(users) triggers when new users are arrived
+   * @param  {function} options.events.user_remove:(users) triggers when users left the chat room
+   * @param  {function} options.events.chat_meta:(meta) triggers when chat room meta are arrived
+   * @param  {function} options.events.chat_write_mode:(chatWriteMode) triggers when chat_write_mode
+   *                    is changed
+   * @param  {function} options.events.message_input_interval:(inputInterval) triggers when
+   *                    message_input_interval is changed,
+   *                    usually happen when message number is too large
+   * @param  {function} options.events.user_count:(userCount) triggers when server automatically
+   *                    broadcasting user count
+   * @param  {function} options.events.messages:(msg) triggers when new messages are arrived
    * @param  {function} options.events.message_flush triggers when admin clean up all the messages
-   * @param  {function} options.events.message_remove triggers when single message is removed
-   * @param  {function} options.events.user_count triggers when server automatically broadcasting
-   *                    user count
-   * @param  {function} options.events.chat_write_mode triggers when chat_write_mode is changed
-   * @param  {function} options.events.message_input_interval triggers when message_input_interval
-   *                    is changed, usually happen when message number is too large
-   * @param  {function} options.events.aggregated_data_add triggers when new aggregated messages are arrived
-   * @param  {function} options.events.raw_data_add triggers when new raw messages are arrived
-   * @param  {function} options.events.connection_status triggers chat room status is changed
+   * @param  {function} options.events.message_remove:(mid) triggers when single message is removed
+   * @param  {function} options.events.aggregated_data_add:(msg) triggers when new aggregated
+   *                    messages are arrived
+   * @param  {function} options.events.raw_data_add:(msg) triggers when new raw messages are arrived
+   * @param  {function} options.events.connection_status:(status) triggers chat room status
+   *                    is changed
+   * @param  {bool} options.isPersonalChat whether the target chat room is a personal chat room
    * @return  {Promise} a promise
    */
   connect(chatroomName, options) {
@@ -85,7 +97,7 @@ class MessageManager extends MessagingClient {
   /**
    * Send message to a specific chat room
    * @param  {string} chatroomName chat room name
-   * @param  {string} message a simple string, e.g. "abc"
+   * @param  {string} message a simple string, e.g. "abc", should within 300 characters
    * @return  {Promise} a promise
    */
   sendMessage(chatroomName, message) {
@@ -95,7 +107,7 @@ class MessageManager extends MessagingClient {
   /**
    * Send a string to a specific chat room which is aggregated in aggregated_data_add
    * @param  {string} chatroomName chat room name
-   * @param  {string} message a simple string, e.g. "like", "cry", should within 50 characters
+   * @param  {string} message a simple string, e.g. "like", "cry", should within 100 characters
    * @return  {Promise} a promise
    */
   sendAggregatedDataTypeMessage(chatroomName, message) {
@@ -105,7 +117,8 @@ class MessageManager extends MessagingClient {
   /**
    * Send the raw data to a specific chat room, this type of message is not aggregated
    * @param  {string} chatroomName chat room name
-   * @param  {string} message a json type of message, e.g. "{ id: 1 }"
+   * @param  {string} message a json or array type of message, e.g. "{ id: 1 } or [{ id: 1 }]",
+   *                  should within 2048 characters
    * @return  {Promise} a promise
    */
   sendRawData(chatroomName, message) {
@@ -188,8 +201,10 @@ class MessageManager extends MessagingClient {
    * @param  {object} options
    * @param  {number} options.page undefined or null imply no shift, default is 1
    * @param  {number} options.perPage default is 10 and MAX is 100
-   * @param  {number} options.oldestDate unix time in millisecond, ex: 1406183498018, undefined or null imply no constraint
-   * @param  {number} options.latestDate unix time in millisecond, ex: 1406183498018, undefined or null imply no constraint
+   * @param  {number} options.oldestDate unix time in millisecond,
+   *                  ex: 1406183498018, undefined or null imply no constraint
+   * @param  {number} options.latestDate unix time in millisecond,
+   *                  ex: 1406183498018, undefined or null imply no constraint
    * @return {object} messages - array of messages
    */
   getMessages(chatroomName, options) {
@@ -256,7 +271,7 @@ class MessageManager extends MessagingClient {
 
 /**
  * Create message manager sdk
- * Synchronously initiate a messaging manager with a cms account id and an user access token.
+ * Synchronously initiate a messaging manager with a cms account id and an user access token
  * Note you should use promise style to handle the callback
  * @param {object} sdkConfig
  * @param {string} sdkConfig.accountId required, a cms account id
@@ -276,7 +291,8 @@ window.StraaS = { createMessageManager }
 
 if (_.isFunction(window.onStraaSMessageManagerSdkReady)) {
   window.onStraaSMessageManagerSdkReady(createMessageManager)
-}</code></pre>
+}
+</code></pre>
         </article>
     </section>
 
@@ -292,7 +308,7 @@ if (_.isFunction(window.onStraaSMessageManagerSdkReady)) {
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Jan 12 2017 14:26:57 GMT+0800 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 13:46:50 GMT+0800 (CST)
 </footer>
 
 <script> prettyPrint(); </script>

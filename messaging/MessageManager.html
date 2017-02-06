@@ -30,7 +30,8 @@
     
         <h2>MessageManager</h2>
         
-            <div class="class-description">MessageManager is a browser-side SDK, please use global function createMessageManager to get instance</div>
+            <div class="class-description">MessageManager is a browser-side SDK, please
+use global function createMessageManager to get instance</div>
         
     
 </header>
@@ -95,7 +96,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line7">line 7</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -270,7 +271,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line215">line 215</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line230">line 230</a>
     </li></ul></dd>
     
 
@@ -446,7 +447,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line196">line 196</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line211">line 211</a>
     </li></ul></dd>
     
 
@@ -649,7 +650,195 @@
 
         <tr>
             
-                <td class="name"><code>messages</code></td>
+                <td class="name"><code>user_meta:(self)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when user meta are arrived</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user_update:(users)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when users are updated</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user_add:(users)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when new users are arrived</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user_remove:(users)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when users left the chat room</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>chat_meta:(meta)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when chat room meta are arrived</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>chat_write_mode:(chatWriteMode)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when chat_write_mode
+                   is changed</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>message_input_interval:(inputInterval)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when
+                   message_input_interval is changed,
+                   usually happen when message number is too large</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user_count:(userCount)</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">triggers when server automatically
+                   broadcasting user count</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>messages:(msg)</code></td>
             
 
             <td class="type">
@@ -666,52 +855,6 @@
             
 
             <td class="description last">triggers when new messages are arrived</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>user_add</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">triggers when new user is arrived</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>user_remove</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">triggers when user left the room</td>
         </tr>
 
     
@@ -741,7 +884,7 @@
 
         <tr>
             
-                <td class="name"><code>message_remove</code></td>
+                <td class="name"><code>message_remove:(mid)</code></td>
             
 
             <td class="type">
@@ -764,7 +907,7 @@
 
         <tr>
             
-                <td class="name"><code>user_count</code></td>
+                <td class="name"><code>aggregated_data_add:(msg)</code></td>
             
 
             <td class="type">
@@ -780,85 +923,15 @@
 
             
 
-            <td class="description last">triggers when server automatically broadcasting
-                   user count</td>
+            <td class="description last">triggers when new aggregated
+                   messages are arrived</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>chat_write_mode</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">triggers when chat_write_mode is changed</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>message_input_interval</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">triggers when message_input_interval
-                   is changed, usually happen when message number is too large</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>aggregated_data_add</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">triggers when new aggregated messages are arrived</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>raw_data_add</code></td>
+                <td class="name"><code>raw_data_add:(msg)</code></td>
             
 
             <td class="type">
@@ -881,7 +954,7 @@
 
         <tr>
             
-                <td class="name"><code>connection_status</code></td>
+                <td class="name"><code>connection_status:(status)</code></td>
             
 
             <td class="type">
@@ -897,7 +970,8 @@
 
             
 
-            <td class="description last">triggers chat room status is changed</td>
+            <td class="description last">triggers chat room status
+                   is changed</td>
         </tr>
 
     
@@ -905,6 +979,29 @@
 </table>
 
             </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isPersonalChat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether the target chat room is a personal chat room</td>
         </tr>
 
     
@@ -952,7 +1049,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line44">line 44</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line56">line 56</a>
     </li></ul></dd>
     
 
@@ -1105,7 +1202,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line53">line 53</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line65">line 65</a>
     </li></ul></dd>
     
 
@@ -1258,7 +1355,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line186">line 186</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line201">line 201</a>
     </li></ul></dd>
     
 
@@ -1411,7 +1508,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line143">line 143</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line156">line 156</a>
     </li></ul></dd>
     
 
@@ -1515,7 +1612,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line134">line 134</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line147">line 147</a>
     </li></ul></dd>
     
 
@@ -1668,7 +1765,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line205">line 205</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line220">line 220</a>
     </li></ul></dd>
     
 
@@ -1891,7 +1988,8 @@
 
             
 
-            <td class="description last">unix time in millisecond, ex: 1406183498018, undefined or null imply no constraint</td>
+            <td class="description last">unix time in millisecond,
+                 ex: 1406183498018, undefined or null imply no constraint</td>
         </tr>
 
     
@@ -1914,7 +2012,8 @@
 
             
 
-            <td class="description last">unix time in millisecond, ex: 1406183498018, undefined or null imply no constraint</td>
+            <td class="description last">unix time in millisecond,
+                 ex: 1406183498018, undefined or null imply no constraint</td>
         </tr>
 
     
@@ -1962,7 +2061,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line167">line 167</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line182">line 182</a>
     </li></ul></dd>
     
 
@@ -2115,7 +2214,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line224">line 224</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line239">line 239</a>
     </li></ul></dd>
     
 
@@ -2291,7 +2390,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line153">line 153</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line166">line 166</a>
     </li></ul></dd>
     
 
@@ -2351,7 +2450,8 @@
 
 
 <div class="description">
-    To call Init function is required after getting MessageManager instance from function createMessageManager
+    To call Init function is required, after getting MessageManager instance
+from function createMessageManager
 </div>
 
 
@@ -2395,7 +2495,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line20">line 20</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line24">line 24</a>
     </li></ul></dd>
     
 
@@ -2571,7 +2671,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line177">line 177</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line192">line 192</a>
     </li></ul></dd>
     
 
@@ -2706,7 +2806,7 @@
 
             
 
-            <td class="description last">a simple string, e.g. "like", "cry", should within 50 characters</td>
+            <td class="description last">a simple string, e.g. "like", "cry", should within 100 characters</td>
         </tr>
 
     
@@ -2747,7 +2847,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line73">line 73</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line85">line 85</a>
     </li></ul></dd>
     
 
@@ -2882,7 +2982,7 @@
 
             
 
-            <td class="description last">a simple string, e.g. "abc"</td>
+            <td class="description last">a simple string, e.g. "abc", should within 300 characters</td>
         </tr>
 
     
@@ -2923,7 +3023,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line63">line 63</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line75">line 75</a>
     </li></ul></dd>
     
 
@@ -3058,7 +3158,8 @@
 
             
 
-            <td class="description last">a json type of message, e.g. "{ id: 1 }"</td>
+            <td class="description last">a json or array type of message, e.g. "{ id: 1 } or [{ id: 1 }]",
+                 should within 2048 characters</td>
         </tr>
 
     
@@ -3099,7 +3200,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line83">line 83</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line96">line 96</a>
     </li></ul></dd>
     
 
@@ -3275,7 +3376,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line93">line 93</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line106">line 106</a>
     </li></ul></dd>
     
 
@@ -3474,7 +3575,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line115">line 115</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line128">line 128</a>
     </li></ul></dd>
     
 
@@ -3673,7 +3774,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line126">line 126</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line139">line 139</a>
     </li></ul></dd>
     
 
@@ -3872,7 +3973,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line104">line 104</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line117">line 117</a>
     </li></ul></dd>
     
 
@@ -3942,7 +4043,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Jan 12 2017 14:26:57 GMT+0800 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 13:46:50 GMT+0800 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
