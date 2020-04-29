@@ -1,5 +1,5 @@
 # Straas Web Document
-![](https://straas.io/images/Straas-logo.png)
+<img src="https://straas.io/images/Straas-logo.png" height="100">
 
 Straas.io aims to be the best video cloud partner that help our customer monetize their video content in all kinds of way including, pay per view, advertisement, sponsorship, ...etc.
 
